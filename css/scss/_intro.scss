@@ -1,0 +1,26 @@
+.intro {
+    background: $c3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .apresentacao {
+        font-family: $fonte-1;
+        padding: 5px;
+        color: $preto;
+        p {
+            @include tipo-1(18);
+            font-weight: 600;
+        }
+        h1 {
+            @include tipo-1(64);
+            font-weight: bold;
+        }
+        .mensagem {
+            font-style: italic;
+            font-weight: 400;
+        }
+    }
+    .ilustracao {
+        padding: 60px;
+    }
+}

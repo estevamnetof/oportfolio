@@ -1,0 +1,18 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    background: $p7;
+    height: 80px;
+    align-items: center;
+    font-family: $fonte-1;
+    padding: 30px;
+    ul {
+        display: flex;
+    }
+    li {
+        padding: 10px;
+        a {
+            color: $c1;
+        }
+    }
+}

@@ -1,0 +1,49 @@
+// Cores
+$p7: #2841CD;
+$branco: #FFFFFF;
+$c1: #F7F7F7;
+$c3: #DEDEDE;
+$branco-c4: #CCCCCC;
+$preto: #000000;
+$preto-c11: #111111;
+$preto-c10: #2E2E2E;
+$azul-p11: #030028;
+
+// Fontes
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+$fonte-1: 'Poppins', sans-serif;
+$fonte-2: 'Roboto', arial;
+
+// Tamanho da fonte
+@function em($pixel, $context: 16) {
+    @return $pixel / $context + em;
+}
+
+@mixin tipo-1($size) {
+    font-family: $fonte-1;
+    @if $size == 18 {
+        font-size: em(18);
+        line-height: em(30, 18);
+    }
+    @else if $size == 24 {
+        font-size: em(24);
+        line-height: em(30, 24);
+    }
+    @else if $size == 64 {
+        font-size: em(64);
+    }
+}
+
+@mixin tipo-2($size) {
+    font-family: $fonte-2;
+    @if $size == 18 {
+        font-size: em(18);
+        line-height: em(30, 18);
+    }
+    @else if $size == 24 {
+        font-size: em(24);
+        line-height: em(30, 24);
+    }
+}
