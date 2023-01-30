@@ -31,6 +31,9 @@ $fonte-2: 'Roboto', arial;
         font-size: em(24);
         line-height: em(30, 24);
     }
+    @else if $size == 40 {
+        font-size: em(40);
+    }
     @else if $size == 64 {
         font-size: em(64);
     }

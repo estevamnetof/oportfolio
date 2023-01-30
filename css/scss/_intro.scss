@@ -7,12 +7,13 @@
         font-family: $fonte-1;
         padding: 5px;
         color: $preto;
+        float: left;
         p {
             @include tipo-1(18);
             font-weight: 600;
         }
         h1 {
-            @include tipo-1(64);
+            @include tipo-1(40);
             font-weight: bold;
         }
         .mensagem {
@@ -21,6 +22,6 @@
         }
     }
     .ilustracao {
-        padding: 60px;
+        padding: 10px;
     }
 }

@@ -47,6 +47,7 @@ header li a {
   font-family: "Poppins", sans-serif;
   padding: 5px;
   color: #000000;
+  float: left;
 }
 
 .intro .apresentacao p {
@@ -58,7 +59,7 @@ header li a {
 
 .intro .apresentacao h1 {
   font-family: "Poppins", sans-serif;
-  font-size: 4em;
+  font-size: 2.5em;
   font-weight: bold;
 }
 
@@ -68,5 +69,25 @@ header li a {
 }
 
 .intro .ilustracao {
-  padding: 60px;
+  padding: 10px;
+}
+
+.sobre {
+  text-align: center;
+}
+
+.sobre h1 {
+  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #111111;
+  padding: 60px 0;
+}
+
+.sobre .sobremim {
+  display: flex;
+  width: 80%;
+  background: #2841CD;
+  color: #FFFFFF;
 }

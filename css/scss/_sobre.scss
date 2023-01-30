@@ -1,0 +1,16 @@
+.sobre {
+    text-align: center;
+    h1 {
+        font-family: $fonte-1;
+        @include tipo-1(40);
+        font-weight: bold;
+        color: $preto-c11;
+        padding: 60px 0;
+    }
+    .sobremim {
+        display: flex;
+        width: 80%;
+        background: #2841CD;
+        color: $branco;
+    }
+}
