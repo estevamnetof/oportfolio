@@ -1,18 +1,39 @@
-header {
+.nav {
+    background: $p7;
+    font-family: $fonte-1;
+    font-weight: normal;
+}
+
+.nav-container {
+    max-width: 1200px;
+    padding: 20px 10px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    background: $p7;
-    height: 50px;
     align-items: center;
-    padding: 30px;
-    @include tipo-1(16);
-    ul {
+}
+
+.nav-menu, .nav-social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.nav-menu a {
+    color: #ffff;
+    transition: .3s all;
+    padding: 10px;
+}
+
+.nav-menu a:hover {
+    color: #1714A8;
+}
+
+@media (max-width: 600px) {
+    .nav-container {
         display: flex;
-    }
-    li {
-        padding: 10px;
-        a {
-            color: $c1;
-        }
+        flex-direction: column;
+        gap: 30px;
     }
 }

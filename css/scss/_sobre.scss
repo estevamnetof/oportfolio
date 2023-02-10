@@ -1,16 +1,28 @@
 .sobre {
+    max-width: 1200px;
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 40px;
+    margin: 0 auto;
     h1 {
-        font-family: $fonte-1;
         @include tipo-1(40);
-        font-weight: bold;
         color: $preto-c11;
-        padding: 60px 0;
     }
-    .sobremim {
-        display: flex;
-        width: 80%;
-        background: #2841CD;
-        color: $branco;
+}
+
+.sobre-descricao {
+    background: $p7;
+    align-items: center;
+    max-width: 60%;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-top: 40px;
+    p {
+        @include tipo-2(18);
+        max-width: 45ch;
+        color: #ffffff;
+        padding: 20px;
+        margin: 0 auto;
     }
 }

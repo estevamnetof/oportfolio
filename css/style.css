@@ -14,80 +14,123 @@ a {
   text-decoration: none;
 }
 
-header {
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.nav {
+  background: #2841CD;
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+}
+
+.nav-container {
+  max-width: 1200px;
+  padding: 20px 10px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  background: #2841CD;
-  height: 50px;
   align-items: center;
-  padding: 30px;
-  font-family: "Poppins", sans-serif;
 }
 
-header ul {
+.nav-menu, .nav-social {
   display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
 }
 
-header li {
+.nav-menu a {
+  color: #ffff;
+  transition: .3s all;
   padding: 10px;
 }
 
-header li a {
-  color: #F7F7F7;
+.nav-menu a:hover {
+  color: #1714A8;
+}
+
+@media (max-width: 600px) {
+  .nav-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 
 .intro {
   background: #DEDEDE;
-  display: flex;
-  justify-content: center;
+  position: relative;
+}
+
+.intro-container {
+  max-width: 1200px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  padding: 40px 20px;
   align-items: center;
 }
 
-.intro .apresentacao {
+.intro-apresentacao p {
   font-family: "Poppins", sans-serif;
-  padding: 5px;
-  color: #000000;
-  float: left;
-}
-
-.intro .apresentacao p {
-  font-family: "Poppins", sans-serif;
-  font-size: 1.125em;
-  line-height: 1.66667em;
+  font-size: 1.5em;
+  line-height: 1.25em;
   font-weight: 600;
 }
 
-.intro .apresentacao h1 {
+.intro-apresentacao h1 {
   font-family: "Poppins", sans-serif;
   font-size: 2.5em;
   font-weight: bold;
 }
 
-.intro .apresentacao .mensagem {
+.intro-apresentacao span {
+  font-family: "Roboto", arial;
+  font-size: 1.125em;
+  line-height: 1.66667em;
   font-style: italic;
-  font-weight: 400;
 }
 
-.intro .ilustracao {
-  padding: 10px;
+.intro-ilustracao img {
+  position: absolute;
+  top: 0;
+  padding-top: 30px;
 }
 
 .sobre {
+  max-width: 1200px;
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 40px;
+  margin: 0 auto;
 }
 
 .sobre h1 {
   font-family: "Poppins", sans-serif;
-  font-family: "Poppins", sans-serif;
   font-size: 2.5em;
-  font-weight: bold;
   color: #111111;
-  padding: 60px 0;
 }
 
-.sobre .sobremim {
-  display: flex;
-  width: 80%;
+.sobre-descricao {
   background: #2841CD;
-  color: #FFFFFF;
+  align-items: center;
+  max-width: 60%;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 5px;
+  margin-top: 40px;
+}
+
+.sobre-descricao p {
+  font-family: "Roboto", arial;
+  font-size: 1.125em;
+  line-height: 1.66667em;
+  max-width: 45ch;
+  color: #ffffff;
+  padding: 20px;
+  margin: 0 auto;
 }
