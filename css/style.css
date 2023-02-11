@@ -134,3 +134,58 @@ img {
   padding: 20px;
   margin: 0 auto;
 }
+
+.conhecimentos {
+  background: #EDEDED;
+  margin-top: 60px;
+}
+
+.conhecimentos-container {
+  max-width: 1200px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.conhecimentos-container h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5em;
+  color: #111111;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.conhecimentos-flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.conhecimentos-linguagens {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  cursor: pointer;
+  transition: ease 0.3s;
+}
+
+.conhecimentos-linguagens img:hover {
+  transform: scale(1.05);
+}
+
+.conhecimentos-descricao {
+  padding-left: 60px;
+  color: #030028;
+}
+
+.conhecimentos-descricao h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5em;
+  line-height: 1.25em;
+  padding-bottom: 15px;
+}
+
+.conhecimentos-descricao p {
+  font-family: "Roboto", arial;
+  font-size: 1.125em;
+  line-height: 1.66667em;
+  max-width: 40ch;
+}

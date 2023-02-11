@@ -1,0 +1,47 @@
+.conhecimentos {
+    background: #EDEDED;    
+    margin-top: 60px;
+}
+
+.conhecimentos-container {
+    max-width: 1200px;
+    height: 400px;
+    margin: 0 auto;
+    h1 {
+        @include tipo-1(40);
+        color: $preto-c11;
+        text-align: center;
+        padding: 60px 0;
+    }
+}
+
+.conhecimentos-flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.conhecimentos-linguagens {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    cursor: pointer;
+    transition: ease 0.3s;
+}
+
+.conhecimentos-linguagens img:hover {
+    transform: scale(1.05);
+}
+
+.conhecimentos-descricao {
+    padding-left: 60px;
+    color: #030028;
+    h2 {
+        @include tipo-1(24);
+        padding-bottom: 15px
+    }
+    p {
+        @include tipo-2(18);
+        max-width: 40ch;
+
+    }
+}
