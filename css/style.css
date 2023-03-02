@@ -21,14 +21,14 @@ img {
 }
 
 .nav {
-  background: #2841CD;
+  background: #111111;
   font-family: "Poppins", sans-serif;
   font-weight: normal;
 }
 
 .nav-container {
   max-width: 1200px;
-  padding: 20px 10px;
+  padding: 20px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -43,20 +43,47 @@ img {
 }
 
 .nav-menu a {
-  color: #ffff;
+  position: relative;
+  color: #FFFFFF;
   transition: .3s all;
   padding: 10px;
 }
 
-.nav-menu a:hover {
-  color: #1714A8;
+.nav-menu a:hover, .nav-social:hover {
+  color: #CCCCCC;
 }
 
-@media (max-width: 600px) {
+.nav-social img {
+  transition: .3s all;
+}
+
+.nav-social a img:hover {
+  transform: scale(1.05);
+}
+
+.nav-menu a::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0px;
+  margin-top: 2px;
+  transition: .3s;
+  background: #CCCCCC;
+  position: absolute;
+}
+
+.nav-menu a:hover:after, .ativo::after {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
   .nav-container {
     display: flex;
     flex-direction: column;
     gap: 30px;
+  }
+  .nav-social {
+    display: none;
   }
 }
 
@@ -73,6 +100,13 @@ img {
   margin: 0 auto;
   padding: 40px 20px;
   align-items: center;
+  justify-items: center;
+}
+
+@media (max-width: 800px) {
+  .intro-container {
+    padding: 0px;
+  }
 }
 
 .intro-apresentacao p {
@@ -91,20 +125,25 @@ img {
 .intro-apresentacao span {
   font-family: "Roboto", arial;
   font-size: 1.125em;
-  line-height: 1.66667em;
+  line-height: 1.33333em;
   font-style: italic;
 }
 
 .intro-ilustracao img {
-  position: absolute;
-  top: 0;
+  display: block;
   padding-top: 30px;
+}
+
+@media (max-width: 800px) {
+  .intro-ilustracao img {
+    display: none;
+  }
 }
 
 .sobre {
   max-width: 1200px;
   text-align: center;
-  padding-top: 200px;
+  padding-top: 120px;
   padding-bottom: 40px;
   margin: 0 auto;
 }
@@ -112,14 +151,15 @@ img {
 .sobre h1 {
   font-family: "Poppins", sans-serif;
   font-size: 2.5em;
-  color: #111111;
+  color: #2E2E2E;
 }
 
 .sobre-descricao {
-  background: #2841CD;
+  display: flex;
+  background: #2E2E2E;
   align-items: center;
-  max-width: 60%;
-  height: 200px;
+  max-width: 80%;
+  height: 300px;
   margin: 0 auto;
   border-radius: 5px;
   margin-top: 40px;
@@ -128,11 +168,20 @@ img {
 .sobre-descricao p {
   font-family: "Roboto", arial;
   font-size: 1.125em;
-  line-height: 1.66667em;
-  max-width: 45ch;
+  line-height: 1.33333em;
+  max-width: 60ch;
   color: #ffffff;
   padding: 20px;
   margin: 0 auto;
+}
+
+@media (max-width: 980px) {
+  .sobre-descricao {
+    flex-direction: column;
+    height: 600px;
+    box-shadow: inset 0 90px #FFFFFF;
+    margin-top: 0px;
+  }
 }
 
 .conhecimentos {
@@ -141,8 +190,8 @@ img {
 }
 
 .conhecimentos-container {
-  max-width: 1200px;
-  height: 400px;
+  max-width: 1000px;
+  height: 450px;
   margin: 0 auto;
 }
 
@@ -154,9 +203,30 @@ img {
   padding: 60px 0;
 }
 
+@media (max-width: 800px) {
+  .conhecimentos-container {
+    height: 500px;
+  }
+}
+
+@media (max-width: 560px) {
+  .conhecimentos-container {
+    height: 550px;
+  }
+}
+
 .conhecimentos-flex {
   display: flex;
   justify-content: space-evenly;
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .conhecimentos-flex {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .conhecimentos-linguagens {
@@ -164,7 +234,22 @@ img {
   gap: 20px;
   flex-wrap: wrap;
   cursor: pointer;
-  transition: ease 0.3s;
+  transition: .3s;
+  max-width: 300px;
+  justify-content: center;
+}
+
+@media (max-width: 800px) {
+  .conhecimentos-linguagens {
+    max-width: 600px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 560px) {
+  .conhecimentos-linguagens {
+    max-width: 300px;
+  }
 }
 
 .conhecimentos-linguagens img:hover {
@@ -172,8 +257,8 @@ img {
 }
 
 .conhecimentos-descricao {
-  padding-left: 60px;
-  color: #030028;
+  color: #2E2E2E;
+  text-align: left;
 }
 
 .conhecimentos-descricao h2 {
@@ -186,6 +271,140 @@ img {
 .conhecimentos-descricao p {
   font-family: "Roboto", arial;
   font-size: 1.125em;
-  line-height: 1.66667em;
+  line-height: 1.33333em;
   max-width: 40ch;
+}
+
+@media (max-width: 800px) {
+  .conhecimentos-descricao {
+    padding-left: 0px;
+  }
+}
+
+.conhecimentos-descricao h2::before {
+  content: '';
+  display: inline-block;
+  height: 8px;
+  width: 12px;
+  background: #2E2E2E;
+  margin-right: 8px;
+  align-items: center;
+}
+
+.projetos {
+  background: #2E2E2E;
+  color: #CCCCCC;
+}
+
+.projetos-container {
+  display: grid;
+  max-width: 1200px;
+  max-height: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+  align-items: center;
+  justify-items: center;
+}
+
+.projetos-container h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5em;
+  font-weight: bold;
+  grid-column: 1/-1;
+  padding-bottom: 60px;
+  padding-top: 30px;
+}
+
+.projeto {
+  padding: 0 40px;
+  overflow-x: auto;
+}
+
+.projeto .projeto-img {
+  padding-bottom: 20px;
+}
+
+.projeto p {
+  font-family: "Roboto", arial;
+  font-size: 1.125em;
+  line-height: 1.33333em;
+  padding-bottom: 20px;
+}
+
+.icon-linguagem {
+  display: inline-block;
+  padding-bottom: 60px;
+}
+
+@media (max-width: 800px) {
+  .projetos-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .icon-linguagem img:nth-last-child(-n + 2) {
+    padding-bottom: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .projetos-container {
+    grid-template-columns: 1fr;
+  }
+  .projeto {
+    text-align: center;
+  }
+  .projeto:nth-last-child(-n + 3) {
+    display: none;
+  }
+  .projeto-img {
+    margin: 0 auto;
+  }
+}
+
+.footer {
+  background: #000000;
+}
+
+.footer-container {
+  max-width: 1200px;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #CCCCCC;
+}
+
+.footer-conteudo h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5em;
+  font-weight: 500;
+}
+
+.footer-conteudo p {
+  font-family: "Roboto", arial;
+  font-size: 1.125em;
+  line-height: 1.33333em;
+}
+
+.footer-contato {
+  display: flex;
+  gap: 30px;
+}
+
+.footer-contato a {
+  cursor: pointer;
+}
+
+.footer-contato a img {
+  transition: .3s all;
+}
+
+.footer-contato :hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
 }

@@ -11,6 +11,10 @@
     margin: 0 auto;
     padding: 40px 20px;
     align-items: center;  
+    justify-items: center;
+    @media (max-width: 800px) {
+        padding: 0px;
+    }
 }
 
 .intro-apresentacao {
@@ -18,10 +22,12 @@
         @include tipo-1(24);
         font-weight: 600;
     }
+
     h1 {
         @include tipo-1(40);
         font-weight: bold;
     }
+
     span {
         @include tipo-2(18);
         font-style: italic;
@@ -29,7 +35,9 @@
 }
 
 .intro-ilustracao img {
-    position: absolute;
-    top: 0;
+    display: block;
     padding-top: 30px;
+    @media (max-width: 800px) {
+        display: none;
+    }
 }

@@ -1,0 +1,43 @@
+.footer {
+    background: $preto;
+}
+
+.footer-container {
+    max-width: 1200px;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: $c4;
+}
+
+.footer-conteudo {
+    h1 {
+        @include tipo-1(40);
+        font-weight: 500;
+    }
+    p {
+        @include tipo-2(18);
+    }
+}
+
+.footer-contato {
+    display: flex;
+    gap: 30px;
+    a {
+        cursor: pointer;
+        img {
+            transition: .3s all;
+        }
+    }
+    :hover {
+        transform: scale(1.05);
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
