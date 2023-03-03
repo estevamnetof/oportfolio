@@ -462,13 +462,12 @@ img {
 
 .to-top {
   position: fixed;
-  padding: 5px;
   border-radius: 50%;
   background: #CCCCCC;
   right: 32px;
   bottom: 16px;
   box-shadow: #000000 0px 0px 0px 1px, #CCCCCC 0px 0px 0px 3px;
-  animation: .3s all;
+  transition: .5s all;
   pointer-events: none;
   opacity: 0;
 }
