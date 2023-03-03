@@ -1,0 +1,25 @@
+// animação subindo e descendo
+@keyframes animacaoIlustracao {
+    from {
+        top: -15px;
+    }
+
+    to {
+        top: 25px;
+    }
+}
+
+// animation: animacaoIlustracao 2.1s infinite alternate-reverse linear;
+
+
+// animação piscada
+@keyframes piscando {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+// animation: piscando .7s infinite;

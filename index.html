@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/icon.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <script>document.documentElement.classList.add('js');</script>
     <title>EN | Portfolio</title>
 </head>
-<body>
+<body id="inicio">
     <section class="nav">
         <header class="nav-container">
             <img src="img/logo.svg" alt="logo">
             <ul class="nav-menu">
-                <li><a href="#">Sobre mim</a></li>
-                <li><a href="#">Conhecimentos</a></li>
-                <li><a href="#">Projetos</a></li>
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#conhecimentos">Conhecimentos</a></li>
+                <li><a href="#projetos">Projetos</a></li>
             </ul>
             <ul class="nav-social">
                 <li><a href="https://github.com/estevamnetof" target="_blank"><img src="img/github(1).svg" alt="github"></a></li>
@@ -28,36 +29,36 @@
     <section class="intro">
         <div class="intro-container">
             <div class="intro-apresentacao">
-                <p>Oi, eu sou</p>
-                <h1>Estevam Neto</h1>
-                <span>"Aprendendo algo novo todos os dias"</span>
+                <p class="fadeInDown" data-anime="200">Oi, eu sou</p>
+                <h1 class="fadeInDown" data-anime="400">Estevam Neto.</h1>
+                <span class="fadeInDown" data-anime="600">Aprendendo algo novo todos os dias</span>
             </div>
-            <div class="intro-ilustracao">
+            <div class="intro-ilustracao fadeInDown" data-anime="800">
                 <img src="img/intro.svg" alt="ilustração">
             </div>
         </div>
     </section>
 
-    <section class="sobre">
-        <h1>sobre mim</h1>
+    <section id="sobre" class="sobre">
+        <h1 class="fadeInLeft" data-anime="200">sobre mim</h1>
         <div class="sobre-descricao">
-            <img src="img/sobre.svg" alt="Ilustração">
-            <p>Meu foco é nas linguagens voltadas ao Front-End. Atualmente aprendendo ainda mais tecnologias que vão me potencializar como Programador. Ainda em progresso com React, tenho curiosidade também em aprender Typescript.</p>
+            <img class="sobre-ilustracao fadeInDown" data-anime="600" src="img/sobre.svg" alt="Ilustração">
+            <p class="fadeInRight" data-anime="400">Meu foco é voltado ao Front-End. Atualmente aprendendo ainda mais tecnologias que vão me potencializar como Programador. Ainda em progresso com React, tenho curiosidade também em aprender Typescript.</p>
         </div>
     </section>
 
-    <section class="conhecimentos">
+    <section id="conhecimentos" class="conhecimentos">
         <div class="conhecimentos-container">
-            <h1>conhecimentos</h1>
+            <h1 class="fadeInRight" data-anime="200">conhecimentos</h1>
             <div class="conhecimentos-flex">
-                <div class="conhecimentos-linguagens">
+                <div class="conhecimentos-linguagens fadeInUp" data-anime="400">
                     <img src="img/html5.svg" alt="html">
                     <img src="img/css3.svg" alt="css">
                     <img src="img/javascript.svg" alt="javascript">
                     <img src="img/sass.svg" alt="sass">
                     <img src="img/react.svg" alt="react">
                 </div>
-                <div class="conhecimentos-descricao">
+                <div class="conhecimentos-descricao fadeInRight" data-anime="600">
                     <h2>html</h1>
                     <p>É uma linguagem de marcação utilizada na construção de páginas na Web.</p>
                 </div>
@@ -65,40 +66,40 @@
         </div>
     </section>
 
-    <section class="projetos">
+    <section id="projetos" class="projetos">
         <div class="projetos-container">
-            <h1>projetos</h1>
-            <div class="projeto">
+            <h1 class="fadeInDown" data-anime="200">projetos</h1>
+            <div class="projeto fadeInUp" data-anime="400">
                 <img class="projeto-img" src="img/relogio.jpg" alt="foto do projeto">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse vitae voluptas ab illum, ducimus harum atque possimus</p>
                 <img class="icon-linguagem" src="img/html5-2.svg" alt="html">
                 <img class="icon-linguagem" src="img/html5-2.svg" alt="html">
             </div>
-            <div class="projeto">
+            <div class="projeto fadeInUp" data-anime="400">
                 <img class="projeto-img" src="img/relogio.jpg" alt="foto do projeto">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse vitae voluptas ab illum, ducimus harum atque possimus</p>
                 <img class="icon-linguagem" src="img/html5-2.svg" alt="html">
                 <img class="icon-linguagem" src="img/html5-2.svg" alt="html">
             </div>
-            <div class="projeto">
+            <div class="projeto fadeInUp" data-anime="400">
                 <img class="projeto-img" src="img/relogio.jpg" alt="foto do projeto">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse vitae voluptas ab illum, ducimus harum atque possimus</p>
                 <img class="icon-linguagem" src="img/html5-2.svg" alt="html">
                 <img class="icon-linguagem" src="img/html5-2.svg" alt="html">
             </div>
-            <div class="projeto">
+            <div class="projeto fadeInUp" data-anime="400">
                 <img class="projeto-img" src="img/relogio.jpg" alt="foto do projeto">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse vitae voluptas ab illum, ducimus harum atque possimus</p>
                 <img class="icon-linguagem" src="img/html5-2.svg" alt="html">
                 <img class="icon-linguagem" src="img/html5-2.svg" alt="html">
             </div>
-            <div class="projeto">
+            <div class="projeto fadeInUp" data-anime="400">
                 <img class="projeto-img" src="img/relogio.jpg" alt="foto do projeto">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse vitae voluptas ab illum, ducimus harum atque possimus</p>
                 <img class="icon-linguagem" src="img/html5-2.svg" alt="html">
                 <img class="icon-linguagem" src="img/html5-2.svg" alt="html">
             </div>
-            <div class="projeto">
+            <div class="projeto fadeInUp" data-anime="400">
                 <img class="projeto-img" src="img/relogio.jpg" alt="foto do projeto">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse vitae voluptas ab illum, ducimus harum atque possimus</p>
                 <img class="icon-linguagem" src="img/html5-2.svg" alt="html">
@@ -121,5 +122,13 @@
             </div>
         </div>
     </footer>
+    
+    <a href="#inicio" class="to-top">
+        <img src="img/seta.svg">
+    </a>
+    
+    <script src="js/simple-anime.js"></script>
+    <script type="module" src="js/geral.js"></script>
+    <script src="js/script.js"></script>    
 </body>
 </html>

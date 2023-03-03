@@ -1,0 +1,17 @@
+.to-top {
+    position: fixed;
+    padding: 5px;
+    border-radius: 50%;
+    background: $c4;
+    right: 32px;
+    bottom: 16px;
+    box-shadow: $preto 0px 0px 0px 1px, $c4 0px 0px 0px 3px;
+    animation: .3s all;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.to-top.active {
+    opacity: 1;
+    pointer-events: auto;
+}
