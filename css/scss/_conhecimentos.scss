@@ -69,7 +69,6 @@
     }
 }
 
-
 .conhecimentos-descricao h2::before {
     content: '';
     display: inline-block;
@@ -78,4 +77,12 @@
     background: $preto-c10;
     margin-right: 8px;
     align-items: center;
+}
+
+.conhecimentos-descricao {
+    display: none;
+}
+
+.conhecimentos-descricao.aberto {
+    display: block;
 }

@@ -298,6 +298,14 @@ img {
   align-items: center;
 }
 
+.conhecimentos-descricao {
+  display: none;
+}
+
+.conhecimentos-descricao.aberto {
+  display: block;
+}
+
 .projetos {
   background: #2E2E2E;
   color: #CCCCCC;
