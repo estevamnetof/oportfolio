@@ -317,7 +317,7 @@ img {
   max-height: 100%;
   grid-template-columns: repeat(3, 1fr);
   margin: 0 auto;
-  align-items: center;
+  align-items: start;
   justify-items: center;
 }
 
@@ -339,6 +339,14 @@ img {
   padding-bottom: 20px;
 }
 
+.projeto h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.125em;
+  line-height: 1.66667em;
+  display: flex;
+  align-items: center;
+}
+
 .projeto p {
   font-family: "Roboto", arial;
   font-size: 1.125em;
@@ -346,7 +354,21 @@ img {
   padding-bottom: 20px;
 }
 
-.icon-linguagem {
+.projeto h2::before {
+  content: '';
+  display: inline-block;
+  height: 8px;
+  width: 12px;
+  margin-right: 8px;
+  background: #CCCCCC;
+  transition: width .2s;
+}
+
+.projeto img:hover h2::before {
+  width: 24px;
+}
+
+.projetos-icons li {
   display: inline-block;
   padding-bottom: 60px;
 }
